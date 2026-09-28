@@ -36,7 +36,7 @@ export default {
           });
         }
 
-        const apiKey = env.GEMINI_API_KEY;
+        const apiKey = env.GEMINI_API_KEY || env.MDEsq || env.MDESQ;
         if (!apiKey) {
           return new Response(JSON.stringify({
             error: "Serverless GEMINI_API_KEY not configured in Cloudflare environment secrets.",
