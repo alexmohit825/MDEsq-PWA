@@ -107,22 +107,22 @@ export default {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Install MDEsq — Physician Medicolegal Suite</title>
+  <title>Install MDEsq — Physician Legal Defense Suite</title>
   <link rel="icon" href="https://raw.githubusercontent.com/alexmohit825/MDEsq/main/MDEsq/Assets.xcassets/AppIcon.appiconset/icon_1024.png">
   <style>
     :root {
-      --bg: #0A0F1D;
-      --card: #131B2E;
-      --gold: #C9A84C;
-      --gold-light: #E8D595;
-      --ivory: #F5F2E9;
-      --slate: #8A99AD;
-      --emerald: #10B981;
+      --bg: #F5F3EC;
+      --card: #FFFFFF;
+      --gold: #9A6B10;
+      --ink: #0F172A;
+      --slate: #475569;
+      --emerald: #05855C;
+      --border: #D6CFC2;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       background: var(--bg);
-      color: var(--ivory);
+      color: var(--ink);
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
       min-height: 100vh;
       display: flex;
@@ -134,26 +134,26 @@ export default {
     }
     .card {
       background: var(--card);
-      border: 1px solid rgba(201, 168, 76, 0.35);
+      border: 1px solid var(--border);
       border-radius: 24px;
       max-width: 440px;
       width: 100%;
       padding: 32px 24px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      box-shadow: 0 18px 36px rgba(15, 23, 42, 0.08);
     }
     .icon {
-      width: 100px;
-      height: 100px;
+      width: 96px;
+      height: 96px;
       border-radius: 22px;
-      margin-bottom: 20px;
-      box-shadow: 0 10px 25px rgba(201, 168, 76, 0.35);
+      margin-bottom: 18px;
+      box-shadow: 0 8px 20px rgba(154, 107, 16, 0.25);
     }
     h1 {
       font-family: "New York", Georgia, serif;
-      font-size: 26px;
+      font-size: 27px;
       font-weight: 700;
-      color: var(--ivory);
-      margin-bottom: 8px;
+      color: var(--ink);
+      margin-bottom: 6px;
     }
     .badge {
       display: inline-block;
@@ -161,38 +161,49 @@ export default {
       font-size: 11px;
       font-weight: 700;
       color: var(--gold);
-      background: rgba(201, 168, 76, 0.15);
-      padding: 4px 10px;
+      background: rgba(154, 107, 16, 0.12);
+      padding: 4px 12px;
       border-radius: 12px;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
     p {
       color: var(--slate);
       font-size: 14px;
       line-height: 1.5;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
+    }
+    .pillars {
+      text-align: left;
+      background: #F8F6F0;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 14px;
+      margin-bottom: 22px;
+      font-size: 12.5px;
+      color: var(--ink);
+      line-height: 1.55;
     }
     .btn-install {
       display: block;
       width: 100%;
       padding: 16px;
-      background: linear-gradient(135deg, #D4AF37 0%, #AA8022 100%);
-      color: #0A0F1D;
+      background: linear-gradient(135deg, #B47E14 0%, #8A5D0B 100%);
+      color: #FFFFFF;
       font-size: 16px;
       font-weight: 700;
       text-decoration: none;
       border-radius: 14px;
-      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+      box-shadow: 0 6px 18px rgba(154, 107, 16, 0.32);
       transition: transform 0.1s ease;
     }
     .btn-install:active {
       transform: scale(0.98);
     }
     .footer-note {
-      margin-top: 20px;
+      margin-top: 18px;
       font-size: 12px;
       color: var(--slate);
-      line-height: 1.4;
+      line-height: 1.45;
     }
     .device-tag {
       color: var(--emerald);
@@ -205,17 +216,23 @@ export default {
   <div class="card">
     <img src="https://raw.githubusercontent.com/alexmohit825/MDEsq/main/MDEsq/Assets.xcassets/AppIcon.appiconset/icon_1024.png" alt="MDEsq Icon" class="icon">
     <h1>MD Esq.</h1>
-    <span class="badge">AD-HOC DIRECT OTA (ZERO ASC)</span>
-    <p>Physician Medicolegal Radar & Contract Defense Folio engineered for licensed physicians and surgeons.</p>
+    <span class="badge">SUNLIT EDITORIAL EDITION • AD-HOC OTA</span>
+    <p>The only statutory medicolegal survival &amp; contract defense suite built by a surgeon exclusively for physicians.</p>
+    <div class="pillars">
+      • <strong>First-Hour Crisis 911:</strong> 6 acute survival playbooks<br>
+      • <strong>9-Rule Contract Auditor:</strong> RCW 49.62 + RCW 49.44.140 IP shield<br>
+      • <strong>Precedent &amp; Deposition Suite:</strong> 6 Cross-Exam Traps + 5s Haptics<br>
+      • <strong>Sunlit Alabaster &amp; Midnight Modes:</strong> Instant 1-tap toggle
+    </div>
 
     <a href="itms-services://?action=download-manifest&url=https://mdesq.mohalex.workers.dev/manifest.plist" class="btn-install">
-      📱 Install on Alex's iPhone
+      📱 Install Native iOS App on Alex's iPhone
     </a>
 
     <div class="footer-note">
       Direct OTA signed binary for registered iPhone<br>
       <span class="device-tag">UDID: 00008150-001E7C892200401C</span><br>
-      Valid for 365 days • No cables • Zero TestFlight footprint
+      Valid for 365 days • Zero cables • Zero TestFlight footprint
     </div>
   </div>
 </body>
